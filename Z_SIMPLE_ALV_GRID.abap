@@ -53,7 +53,7 @@ SELECTION-SCREEN: END OF BLOCK one.
 *&---------------------------------------------------------------------*
 *& Called when user submits selection screen.                          *
 *& Checks what parameters were specified then queries the data into    *
-*& it_brk (internal table) then calls display_data subroutine.         *
+*& it_vbrk (internal table) then calls display_data subroutine.         *
 *&---------------------------------------------------------------------*
 AT SELECTION-SCREEN.
   IF p_unam IS INITIAL.
