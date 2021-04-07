@@ -134,7 +134,7 @@ ENDFORM.
 *& If user clicks an invoice, send them to VF03 (display invoice)      *
 *&---------------------------------------------------------------------*
 FORM process_ucomm  USING uc LIKE SY-UCOMM sel TYPE SLIS_SELFIELD.
-  IF sel-fieldname = 'VBELN'.
+  IF sel-fieldname = 'VBELN' AND sel-value <> ''.
     SET PARAMETER ID 'VF' FIELD sel-value.
     CALL TRANSACTION 'VF03' AND SKIP FIRST SCREEN.
   ENDIF.
@@ -156,7 +156,7 @@ FORM top_of_page.
 
   " Switch date from yyyymmdd (database value) to mm/dd/yyyy
   CONCATENATE so_cdte-low+4(2) so_cdte-low+6(2) so_cdte-low(4)
-  INTO lv_start_date SEPARATED BY '/'.
+    INTO lv_start_date SEPARATED BY '/'.
 
   " Show report run parameters based on which are specified
   IF so_cdte-high IS INITIAL.
