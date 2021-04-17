@@ -2,7 +2,6 @@
 
 A list of simple SAP ABAP examples.
 I mostly wrote these to get some practice for writing basic reports, but if you like what you see, please feel free to use them.
-These have never been tested/used in a live install of SAP ERP, but give it a go, and leave feedback.
 
 ---
 
