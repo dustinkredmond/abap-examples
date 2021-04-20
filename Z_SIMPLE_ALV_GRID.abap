@@ -70,7 +70,7 @@ AT SELECTION-SCREEN.
   ENDIF.
 
   IF LINES( it_vbrk ) EQ 0.
-    MESSAGE 'Query caused no data to be retrieved.' TYPE 'W'.
+    MESSAGE 'Query caused no data to be retrieved.' TYPE 'I'.
   ELSE.
     PERFORM display_data.
   ENDIF.
