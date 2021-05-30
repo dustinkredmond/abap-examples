@@ -44,7 +44,7 @@ AT SELECTION-SCREEN.
   PERFORM display_data.
 
 *----------------------------------------------------------------------*
-*  FORM get_data                                                        *
+*  FORM get_data                                                       *
 *----------------------------------------------------------------------*
 * Fetches data from usr02 table into gt_user internal table based on   *
 * user selection criteria.                                             *
@@ -62,7 +62,7 @@ FORM get_data.
 ENDFORM.
 
 *----------------------------------------------------------------------*
-*  FORM display_data                                                    *
+*  FORM display_data                                                   *
 *----------------------------------------------------------------------*
 * Displays the contents of internal table (gt_user) in an ALV by using *
 * the ABAP class cl_salv_table.                                        *
