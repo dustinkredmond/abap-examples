@@ -1,8 +1,6 @@
 # abap-examples
 
-A list of simple SAP ABAP examples.
-I mostly wrote these to get some practice for writing basic reports, but if you like what you see, please feel free to use them.
-
+A list of simple SAP ABAP reports. Written mainly for content for my YouTube tutorial channel, but if they're helpful, feel free to use these.
 ---
 
 | Program                                            | Description                                                         |
